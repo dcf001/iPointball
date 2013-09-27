@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="2844" systemVersion="11G63" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="2">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1930"/>
+    </dependencies>
+    <scenes>
+        <!--Me View Controller-->
+        <scene sceneID="5">
+            <objects>
+                <viewController id="2" customClass="meViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" restorationIdentifier="" id="3">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fYF-Fj-O5d" userLabel="ManagerCreation">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ykp-hw-xgd">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="147" id="OOh-aj-rWV"/>
+                                        </constraints>
+                                        <attributedString key="attributedText">
+                                            <fragment content="Manager Creation">
+                                                <attributes>
+                                                    <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <font key="NSFont" size="17" name="Helvetica"/>
+                                                    <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                </attributes>
+                                            </fragment>
+                                        </attributedString>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a name" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Iee-yf-8IN">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="161" id="AG2-Qw-xkF"/>
+                                            <constraint firstAttribute="height" constant="30" id="RnZ-ib-nra"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6y3-Ub-Rlf">
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="97" id="88A-I3-bGj"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ttI-WJ-D6i">
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="43" id="1dZ-Eu-IWA"/>
+                                            <constraint firstAttribute="width" constant="73" id="o8K-4D-EW0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="Male">
+                                            <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <state key="highlighted">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="GenderType:" destination="2" eventType="touchUpInside" id="zVJ-UK-XrS"/>
+                                        </connections>
+                                    </button>
+                                    <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Osq-Dr-7av">
+                                        <items>
+                                            <barButtonItem title="Item" id="jvC-e6-gS9"/>
+                                        </items>
+                                    </toolbar>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Iee-yf-8IN" firstAttribute="top" secondItem="fYF-Fj-O5d" secondAttribute="top" constant="74" id="2Pf-zo-SPk"/>
+                                    <constraint firstItem="Osq-Dr-7av" firstAttribute="bottom" secondItem="fYF-Fj-O5d" secondAttribute="bottom" type="default" id="4eC-jP-Q03"/>
+                                    <constraint firstItem="6y3-Ub-Rlf" firstAttribute="centerX" secondItem="ttI-WJ-D6i" secondAttribute="centerX" type="default" id="6e6-pJ-h0T"/>
+                                    <constraint firstItem="6y3-Ub-Rlf" firstAttribute="baseline" secondItem="Iee-yf-8IN" secondAttribute="baseline" type="default" id="BoZ-Ui-mL1"/>
+                                    <constraint firstItem="Iee-yf-8IN" firstAttribute="leading" secondItem="fYF-Fj-O5d" secondAttribute="leading" constant="88" id="LMS-M1-XdU"/>
+                                    <constraint firstItem="6y3-Ub-Rlf" firstAttribute="top" secondItem="fYF-Fj-O5d" secondAttribute="top" constant="191" id="PLe-Sp-Cm0"/>
+                                    <constraint firstItem="Osq-Dr-7av" firstAttribute="trailing" secondItem="fYF-Fj-O5d" secondAttribute="trailing" type="default" id="VHE-JN-dxX"/>
+                                    <constraint firstItem="ttI-WJ-D6i" firstAttribute="centerX" secondItem="Iee-yf-8IN" secondAttribute="centerX" type="default" id="ZUh-I8-rQ7"/>
+                                    <constraint firstItem="ttI-WJ-D6i" firstAttribute="baseline" secondItem="6y3-Ub-Rlf" secondAttribute="baseline" type="default" id="eQY-GW-ebd"/>
+                                    <constraint firstItem="ykp-hw-xgd" firstAttribute="top" secondItem="fYF-Fj-O5d" secondAttribute="top" constant="32" id="k6i-PY-ONh"/>
+                                    <constraint firstItem="Osq-Dr-7av" firstAttribute="leading" secondItem="fYF-Fj-O5d" secondAttribute="leading" type="default" id="vVb-n5-4k1"/>
+                                    <constraint firstItem="ttI-WJ-D6i" firstAttribute="top" secondItem="fYF-Fj-O5d" secondAttribute="top" constant="123" id="vy8-Hd-M5P"/>
+                                    <constraint firstItem="Iee-yf-8IN" firstAttribute="trailing" secondItem="ykp-hw-xgd" secondAttribute="trailing" type="default" id="zO5-zQ-I05"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="fYF-Fj-O5d" firstAttribute="bottom" secondItem="3" secondAttribute="bottom" type="default" id="AHN-gU-EmD"/>
+                            <constraint firstItem="fYF-Fj-O5d" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="XS5-xv-eaZ"/>
+                            <constraint firstItem="fYF-Fj-O5d" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="asb-JC-OCE"/>
+                            <constraint firstItem="fYF-Fj-O5d" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="zY5-2S-b3u"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <classes>
+        <class className="NSLayoutConstraint" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
+        </class>
+        <class className="meViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/meViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="GenderType:" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
